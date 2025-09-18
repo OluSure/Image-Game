@@ -15,6 +15,19 @@ let show = 0;
 let check = 1;
 let play = true;
 
+// function to start the game
+function startGame() {
+  game = Math.floor(Math.random() * 9) + 1;
+  guess = 0;
+  attempts = 10;
+  show = 0;
+  check = 1;
+  play = true;
+  attempt.textContent = attempts;
+  win.textContent = show;
+  reply.textContent = "";
+  showImage.innerHTML = "";
+}
 
 // function to click the game
 function reveal(item) {
@@ -36,12 +49,14 @@ function reveal(item) {
   
   }
    if (show == 2) {
-    reply.textContent = ("Congratulations! You've won " + show + " times");
+    reply.textContent = ("Congratulations! You've won " + show + " times  ");
+        reply.innerHTML += "<button onclick='startGame()'>Play Again</button>";
     play = false;
   }
 
   if (attempts === guess) {
-    reply.textContent = ("Game Over! You've used all your attempts");
+    reply.textContent = ("Game Over! You've used all your attempts  ");
+    reply.innerHTML += "<button onclick='startGame()'>Play Again</button>";
     play = false;
   }
 }
@@ -61,7 +76,8 @@ function checks() {
   } else if (check < 1) {
     reply.textContent = ("You have already used your only chance to see it");
   } else if (check && win == 2) {
-    reply.textContent = ("You have already won the game");
+    reply.textContent = ("You have already won the game  ");
+        reply.innerHTML += "<button onclick='startGame()'>Play Again</button>";
     play = false;
   }
   
