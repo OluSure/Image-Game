@@ -1,0 +1,97 @@
+.hidden {
+  display: none;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  max-width: 330px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contain {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 9px;
+}
+.number-game {
+  text-align: center;
+
+}
+.guess-number {
+  margin-top: 20px;
+}
+.tab {
+  width: 10%;
+  border-collapse: collapse;
+}
+.tab td {
+  padding: 5px;
+  text-align: center;
+}
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 4px;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
+.link {
+  text-decoration: none;
+}
+.link:hover {
+  opacity: 0.8;
+} 
+/* #showImage {
+  color: white;
+  text-align: center;
+  background-color: black;
+  border: #333 solid 2px;
+  width: 70;
+  height: 70; 
+} */
+#showImage img {
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+#reply {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #333;
+}
+#win, #attempt {
+  font-weight: bold;
+}
+#win {
+  color: green;
+}
+#attempt {
+  color: red;
+}
+#mymessage {
+width: 20%;
+font-size: 24px;
+position: absolute;
+padding: 15px;
+color: #333;
+background-color: bisque;
+border: 2px solid #131111;
+}
+.close {
+  margin: 0px 0px 17px 0;
+  float: right;
+  background-color: red;
+}
+
+

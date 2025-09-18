@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Guess The Image Game</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<button onclick="toggleClass()">See Help</button>
+<div id="myMessage" class="hidden">
+  <button class="close" onclick="toggleClass()">X</button><br>
+  This is a game of guessing the image on 10 attempts to show the guessed image and there is an option to see the guessed image before the end of the attempts. <br><br>
+  <b>Note:</b> You can only check to see the guess image once. You need to guess the image right 2 times on 10 attempts to win.
+</div>
+
+    <div class="container">
+      <div class="number-game">
+<div id="showImage"></div>
+<div id="reply"> </div>
+  <div class="guess-number">
+    <table class="tab">
+      <tr>
+        <td><a class="link" onclick="reveal(1)"><img id="image" src="img/image-1.jpg" alt="image" width="100" height="100"/></a></td>
+        <td><a class="link" onclick="reveal(2)"><img id="image" src="img/image-2.jpg" alt="image" width="100" height="100"/></a></td>
+        <td><a class="link" onclick="reveal(3)"><img id="image" src="img/image-3.jpg" alt="image" width="100" height="100"/></a></td>
+      </tr>
+      <tr>
+        <td><a class="link" onclick="reveal(4)"><img id="image" src="img/image-4.jpg" alt="image" width="100" height="100"/></a></td>
+        <td><a class="link" onclick="reveal(5)"><img id="image" src="img/image-5.jpg" alt="image" width="100" height="100"/></a></td>
+        <td><a class="link" onclick="reveal(6)"><img id="image" src="img/image-6.jpg" alt="image" width="100" height="100"/></a></td>
+      </tr>
+      <tr>
+        <td><a class="link" onclick="reveal(7)"><img id="image" src="img/image-7.jpg" alt="image" width="100" height="100"/></a></td>
+        <td><a class="link" onclick="reveal(8)"><img id="image" src="img/image-8.jpg" alt="image" width="100" height="100"/></a></td>
+        <td><a class="link" onclick="reveal(9)"><img id="image" src="img/image-9.jpg" alt="image" width="100" height="100"/></a></td>
+      </tr>
+    </table>
+  </div>
+      </div>
+      <div class="contain">
+  <div class="info"> Attempts: <span id="attempt">10</span> </div>
+  <div class="info2"> Win: <span id="win">0</span> </div>
+  <button class="" id="checks" onclick="checks()">Check</button>
+      </div>
+    </div>
+     <script src="app.js"></script>
+</body>
+<html>
